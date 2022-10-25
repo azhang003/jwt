@@ -1,0 +1,41 @@
+{
+  "name": "Zhang003/jwt",
+  "type": "library",
+  "description": "Zhang003 jwt for PHP",
+
+  "keywords": [
+    "Jwt",
+    "Jwttoken",
+    "token",
+    "Zhang003"
+  ],
+  "homepage": "http://developer.Zhang003.com/",
+  "license": "Apache-2.0",
+  "require": {
+    "PHP": ">=7.1",
+    "firebase/php-jwt": "^5.4.0",
+    "topthink/framework": "^6.0"
+  },
+  "authors": [
+    {
+      "name": "Zhang003",
+      "email": "Zhang003@foxmail.com",
+      "homepage": "https://www.Zhang003.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Zhang003\\Jwt\\": "src"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "extra": {
+    "think":{
+      "config":{
+        "jwt": "src/config/jwt.php"
+      }
+    }
+  }
+}
